@@ -7,5 +7,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/dashboard/', admin.site.urls),
     path('admin/', include('product.urls')),
+    path('', include('userpage.urls'),)
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
