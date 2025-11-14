@@ -20,7 +20,7 @@ User|| {{product.product_name}}
                             <h3 class="cart-text"> RS.{{product.product_price}}</h3>
                             <h5>{% if product.is_instock %} In Stock {% else %} Out of Stock {% endif %}</h5>
                             <p class="card-text">{{product.description}}</p>
-                            <a href="#" class="btn btn-success">Add to Cart</a>
+                            <a href="{% url 'add_to_cart' product.id %}" class="btn btn-success">Add to Cart</a>
                         </div>
                     </div>
                 </div>
